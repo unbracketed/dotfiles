@@ -1,6 +1,10 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
 
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+
 " change the mapleader from \ to ,
 let mapleader=","
 
@@ -9,6 +13,7 @@ set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
+
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 set number        " always show line numbers
