@@ -1,6 +1,0 @@
-screen bash
-screen -t ipy 1 manage.py shell_plus
-screen -t DB 2 manage.py dbshell
-screen -t test 3 bash -c "manage.py test --settings=gamesradar.conf.test.settings"
-screen -t runserver 4 manage.py runserver
-screen -p 0
