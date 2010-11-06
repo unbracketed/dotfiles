@@ -14,6 +14,11 @@ set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 
+colorscheme wuye
+"also liked:
+" relaxedgreen, neverness, impact, dante, adarvn, tir black, vividchalk
+"
+
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 set number        " always show line numbers
