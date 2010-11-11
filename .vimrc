@@ -11,6 +11,7 @@ let mapleader=","
 set hidden        " hide buffers instead of closing them
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
+set expandtab     " convert tab to white space
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 
@@ -18,6 +19,10 @@ colorscheme wuye
 "also liked:
 " relaxedgreen, neverness, impact, dante, adarvn, tir black, vividchalk
 "
+
+"don't like dealing with swp files
+set nobackup
+set noswapfile
 
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
@@ -48,6 +53,17 @@ set showmode
 "
 " " Switch on syntax highlighting.
 syntax on
+
+autocmd BufRead,BufNewFile *.py syntax on
+autocmd BufRead,BufNewFile *.py set ai
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+
+"enable handy tricks for MiniBufExpl
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
