@@ -1,4 +1,0 @@
-startup_message off             # bypass GPL notice (we're aware)
-defscrollback 15000             # big scrollback
-shell bash                      # don't start login shells
-shelltitle ""                   # no title by default - set in PS
