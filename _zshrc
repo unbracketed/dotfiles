@@ -39,7 +39,6 @@ case $( uname -s ) in
 
 #OSX / Homebrew
     Darwin ) 
-        export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
         export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
         export WORKON_HOME=~/virtualenvs
         . /usr/local/share/python/virtualenvwrapper.sh 
@@ -61,4 +60,6 @@ alias tmux="tmux -2"
 
 #oh-my-zsh themes depend on this
 [[ -s "/Users/luftyluft/.rvm/scripts/rvm" ]] && source "/Users/luftyluft/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-[[ -s "/Users/luftyluft/.rvm/scripts/rvm" ]] && vm use default
+[[ -s "/Users/luftyluft/.rvm/scripts/rvm" ]] && rvm use default
+
+alias tmls='tmux list-sessions'
