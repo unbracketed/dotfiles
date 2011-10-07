@@ -66,3 +66,4 @@ do_source ~/code/BTY/shell/zsh/aliases/default
 do_source ~/code/BTY/shell/zsh/aliases/tmux
 
 do_source ~/code/BTY/shell/python/virtualenvwrapper
+do_source ~/code/BTY/shell/python/aliases
