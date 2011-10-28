@@ -62,6 +62,9 @@ function do_source {
     echo '-' $1
 }
 
+#turn off Oh-My-Zsh auto-update check
+export DISABLE_AUTO_UPDATE='true'
+
 do_source ~/code/BTY/shell/zsh/aliases/default
 do_source ~/code/BTY/shell/zsh/aliases/tmux
 
