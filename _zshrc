@@ -56,10 +56,11 @@ alias tmux="tmux -2"
 # custom built vim for python support
 [ -x "/Applications/MacVim.app/Contents/MacOS/Vim" ] && alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
+export BTY_DEBUG=0
 function do_source {
-    echo '+' $1
+    [[ $BTY_DEBUG = 1 ]] && echo '+' $1
     source $1
-    echo '-' $1
+    [[ $BTY_DEBUG = 1 ]] && echo '-' $1
 }
 
 #turn off Oh-My-Zsh auto-update check
