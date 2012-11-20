@@ -1,0 +1,10 @@
+[user]
+	name = Brian Luft
+	email = brian@lincolnloop.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = vim
