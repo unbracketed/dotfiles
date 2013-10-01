@@ -1,1 +1,7 @@
 *.pyc
+*.sublime-*
+*.egg-info
+.coverage
+.DS_Store
+*htmlcov*
+

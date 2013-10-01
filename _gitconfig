@@ -8,3 +8,6 @@
 	status = auto
 [core]
 	editor = vim
+	excludesfile = /Users/brian/.gitignore
+[push]
+	default = simple

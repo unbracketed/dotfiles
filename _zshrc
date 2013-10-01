@@ -71,3 +71,11 @@ do_source ~/code/BTY/shell/zsh/aliases/tmux
 
 do_source ~/code/BTY/shell/python/virtualenvwrapper
 do_source ~/code/BTY/shell/python/aliases
+#do_source ~/code/powerline/powerline/bindings/zsh/powerline.zsh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+###postgres.app
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
