@@ -44,6 +44,8 @@ function rmpyc()
     find . -name "*.pyc" -exec rm {} \;
 }
 
+export WHEEL_DIR=~/code/wheels
+
 #start tmux in 256 color mode
 alias tmux="tmux -2"
 
