@@ -4,4 +4,6 @@
 .coverage
 .DS_Store
 *htmlcov*
+.sass-cache
+.noseids
 
